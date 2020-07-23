@@ -26,7 +26,36 @@ public class BasicExpression {
         if (TwoParem.isNotNegTwo(10,5)) System.out.println("5 is a factor of 10");
         if (!TwoParem.isNotNegTwo(9,4)) System.out.println("4 isn't a factor of 9");
 
+        Test3 TwoParem2 = (n)->{
+            int res = 2;
+
+            for (int i = 1; i < n; i++) {
+                res = i*res;
+            }
+            return res;
+        };
+        System.out.println(TwoParem2.isNotNegTwo(10));
+
         System.out.println(SongDecoder("RWUBWUBWUBWUBLWUB"));
+
+        Test4<String> reversStringTo = (str) -> {
+            String reversed = "";
+
+            for (int i = str.length()-1; i>=0; i--) {
+                reversed += str.charAt(i);
+            }
+            return reversed;
+        };
+        Test4<Integer> reversIntTo = (z) -> {
+            int t = 0;
+
+            for (int i = 0; i<z; i++) {
+                t += i*i;
+            }
+            return t;
+        };
+        System.out.println("lambda is :" + reversStringTo.reverseString("hello world"));
+        System.out.println("lambda is :" + reversIntTo.reverseString(19));
     }
 
     public static String SongDecoder (String song)
@@ -53,6 +82,14 @@ interface Test2{
     boolean isNotNegTwo(int n,int y);
 }
 
+
+interface Test3{
+    int isNotNegTwo(int n);
+}
+
+interface Test4<T>{
+    T reverseString(T args);
+}
 class  BooleanTest1{
 
 
