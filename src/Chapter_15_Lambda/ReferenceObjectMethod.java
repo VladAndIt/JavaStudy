@@ -9,8 +9,13 @@ class ReferenceStaticMethod1 {
 
         String inStr = "Lambda expressions increase efficiency of Java!";
         String outStr;
-        MyString1 srtOp = new MyString1();
+        MyString2 srtOp = new MyString2();
         outStr = stringOp(srtOp::strRevers, inStr);
+
+        System.out.println("The original string " + inStr);
+        System.out.println("The changed string " + outStr);
+
+        outStr = stringOp(MyString1::strRevers, outStr);
 
         System.out.println("The original string " + inStr);
         System.out.println("The changed string " + outStr);
@@ -22,9 +27,16 @@ interface StringFunc3{
 }
 
 class MyString1{
-    String strRevers(String str){
+    static String strRevers(String str){
         String result = "";
         for (int i = str.length()-1; i >= 0; i--)result += str.charAt(i);
+        return result;
+    }
+}
+class MyString2{
+    String strRevers(String str){
+        String result = "";
+        for (int i = str.length()-1; i >= 0; i--)result += str.charAt(i) + " ";
         return result;
     }
 }
