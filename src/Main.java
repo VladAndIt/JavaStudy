@@ -1,6 +1,5 @@
-import Chapter_10_Exceptions.BasisStage.ExcClass;
-//import Chapter_9_Interfaces.*;
-//import Chapter_10_Exceptions.*;
+//import Part_1.Chapter_9_Interfaces.*;
+//import Part_1.Chapter_10_Exceptions.*;
 
 public class Main {
     public static void main(String[] args) {
