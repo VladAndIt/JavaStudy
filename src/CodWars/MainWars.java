@@ -1,7 +1,7 @@
-//import Part_1.Chapter_9_Interfaces.*;
+package CodWars;//import Part_1.Chapter_9_Interfaces.*;
 //import Part_1.Chapter_10_Exceptions.*;
 
-public class Main {
+public class MainWars {
     public static void main(String[] args) {
         //_________________________________________________Chapter 9
 

@@ -1,4 +1,4 @@
-package Part_2.Chapter_17_String;
+package Part_2.Chapter_17_Strings;
 
 public class StringObj {
     public static void main(String[] args) {

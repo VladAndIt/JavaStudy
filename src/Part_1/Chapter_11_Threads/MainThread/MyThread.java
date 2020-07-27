@@ -5,7 +5,7 @@ class MyThread {
         Thread currentThread = Thread.currentThread();
         System.out.println("Current main thread is " + currentThread);
 
-        currentThread.setName("Main thread");
+        currentThread.setName("CodWars.MainWars thread");
         System.out.println("After changing name main thread is " + currentThread);
 
         try {

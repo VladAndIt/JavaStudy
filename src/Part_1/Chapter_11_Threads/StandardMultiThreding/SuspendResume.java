@@ -20,7 +20,7 @@ public class SuspendResume {
             ob2.myresume();
             System.out.println("Resume of the second thread");
         }catch (InterruptedException e){
-            System.out.println("Main thread is interrupted");
+            System.out.println("CodWars.MainWars thread is interrupted");
         }
 
         try {
@@ -28,8 +28,8 @@ public class SuspendResume {
             ob1.t.join();
             ob2.t.join();
         }catch (InterruptedException e){
-            System.out.println("Main thread is interrupted!");
-        }System.out.println("Main thread is finished!");
+            System.out.println("CodWars.MainWars thread is interrupted!");
+        }System.out.println("CodWars.MainWars thread is finished!");
 
 
     }

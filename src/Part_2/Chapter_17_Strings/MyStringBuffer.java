@@ -1,4 +1,4 @@
-package Part_2.Chapter_17_String;
+package Part_2.Chapter_17_Strings;
 
 import java.util.Arrays;
 

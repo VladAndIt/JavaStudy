@@ -2,7 +2,7 @@ package Part_1.Chapter_14_Generalization;
 
 public class TypeInterfaceGen {
     public static void main(String[] args) {
-//        Character t = new Character();
+//        MyCharacter t = new MyCharacter();
 //            var c = Boolean.valueOf("true");
 //            System.out.println(c);
         Integer w = 100;
