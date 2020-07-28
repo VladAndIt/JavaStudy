@@ -4,7 +4,7 @@ import java.lang.*;
 
 public class MyCharacter {
     public static void main(String[] args) {
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();;
 
         int rang = Integer.parseInt("10FFFF",16);
         String r = "fsf";
@@ -22,12 +22,13 @@ public class MyCharacter {
         
         System.out.println("Value " + rang/2);
         System.out.println("Value " + Character.isDigit(49) + " ");
+
         var Info = new StringBuilder();
-        
-        
+
         try {
             //e.exec("\\C:\\Users\\Public\\Desktop\\Skype.lnk");
-            p = e.exec("cmd /k C:\\Users\\Public\\Desktop\\Skype.lnk");
+            p = e.exec("notepad");
+            //p = e.exec("cmd /k C:\\Users\\Public\\Desktop\\Skype.lnk");
             p.waitFor();
 
         } catch (IOException ex) {
@@ -45,8 +46,7 @@ public class MyCharacter {
                 "\nInterim ver: " + v.interim()+
                 "\nUpdate ver: "  + v.update() +
                 "\nPatch ver: " + v.patch()) ;
-        long endTime = System.nanoTime();
-        Info.append("\nTime execution: " + (endTime - startTime)/(1e+9) + "\nSystem info: " + System.getProperty("os.name") + ", " +  System.getProperty("os.arch"));
+                Info.append("\nTime execution: " + ((System.currentTimeMillis() - startTime)*1e-3) + "\nSystem info: " + System.getProperty("os.name") + ", " +  System.getProperty("os.arch"));
         System.out.println(Info);
 
     }
