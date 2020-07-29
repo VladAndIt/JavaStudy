@@ -1,4 +1,4 @@
-package Part_2.Chapter_18;
+package Part_2.Chapter_18_JavaLang;
 import java.io.IOException;
 import java.lang.*;
 

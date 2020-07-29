@@ -1,4 +1,4 @@
-package Part_2.Chapter_18;
+package Part_2.Chapter_18_JavaLang;
 
 public class ArrayCopy {
     static byte[] a = {65,55,44,66,54,77};
