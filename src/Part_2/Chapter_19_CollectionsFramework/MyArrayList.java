@@ -10,7 +10,6 @@ public class MyArrayList {
         ArrayList<String> al = new ArrayList<String>();
         ArrayList<Integer> al2 = new ArrayList<>();
 
-
         System.out.println(String.format("Initial size of al: %s", al.size()));
 
         for (int i = 65; i < 90; i++) {
@@ -38,7 +37,5 @@ public class MyArrayList {
         var Info = new StringBuilder();
         Info.append("\nTime execution: " + ((System.currentTimeMillis() - startTime)*1e-3) + " sec.\n");
         System.out.println(Info);
-
-
     }
 }
