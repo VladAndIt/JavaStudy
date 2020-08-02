@@ -14,7 +14,7 @@ public class MyComparator {
         ts.add("Gamm");
         ts.add("Omeg");
         for (String element : ts) {
-            System.out.print(element + "");
+            System.out.print(element + " ");
         }
         System.out.println();
         TreeSet<String> ts2 = new TreeSet<>(new MyOriginalComp());
@@ -24,7 +24,7 @@ public class MyComparator {
         ts2.add("Gamm");
         ts2.add("Omeg");
         for (String element:ts2) {
-            System.out.print(element + "");
+            System.out.print(element + " ");
         }
         System.out.println();
         MyOriginalComp ms = new MyOriginalComp();
@@ -35,10 +35,28 @@ public class MyComparator {
         ts3.add("Gamm");
         ts3.add("Omeg");
         for (String element:ts3) {
-            System.out.print(element + "");
+            System.out.print(element + " ");
         }
-
-
+        System.out.println();
+        TreeSet<String> ts4 = new TreeSet<>((aStr,bStr)->aStr.compareTo(bStr));
+        ts4.add("Beta");
+        ts4.add("Alph");
+        ts4.add("Eta");
+        ts4.add("Gamm");
+        ts4.add("Omeg");
+        for (String element:ts4) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+        TreeSet<String> ts5 = new TreeSet<>((aStr,bStr)->bStr.compareTo(aStr));
+        ts5.add("Beta");
+        ts5.add("Alph");
+        ts5.add("Eta");
+        ts5.add("Gamm");
+        ts5.add("Omeg");
+        for (String element:ts5) {
+            System.out.print(element + " ");
+        }
 
         System.out.println("\nTime execution: " + ((System.currentTimeMillis() - startTime) * 1e-3) + " sec.\n");
     }
