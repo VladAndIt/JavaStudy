@@ -9,7 +9,7 @@ public class FileReader {
 //        FileInputStream file1 = new FileInputStream("D:\\Oracle\\Projects\\JAVA_Schildt\\src\\Part_1.Chapter_13_IO\\FileIO\\FirstFile.txt");
   //      FileOutputStream file2 = new FileOutputStream("D:\\Oracle\\Projects\\JAVA_Schildt\\src\\Part_1.Chapter_13_IO\\FileIO\\SecondFile.txt");
 
-    //    BufferedInputStream bufferedInputStream = new BufferedInputStream(file1 ,200);
+    //    BufferedInputStreamDemo bufferedInputStream = new BufferedInputStreamDemo(file1 ,200);
         int i;
 
         try (
