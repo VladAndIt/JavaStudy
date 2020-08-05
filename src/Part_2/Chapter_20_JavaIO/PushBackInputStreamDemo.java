@@ -2,6 +2,7 @@ package Part_2.Chapter_20_JavaIO;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PushbackInputStream;
 
 public class PushBackInputStreamDemo {
@@ -29,11 +30,23 @@ public class PushBackInputStreamDemo {
             System.out.println("I/O Exception " + e);
         }
 
+        InputStream is = new InputStream() {
+            @Override
+            public int read() throws IOException {
+                return 10;
+            }
+
+            @Override
+            public byte[] readAllBytes() throws IOException {
+                return "I AM STREAM".getBytes();
+            }
+        };
+
         for (int j = 2; j < 10; j++) {
-            String ret = "Big mouse or tank?";
+            String ret = "Big mouse or ф tank?";
             byte[] buf = ret.getBytes();
             ByteArrayInputStream in2 = new ByteArrayInputStream(buf);
-            try (PushbackInputStream f = new PushbackInputStream(in2)) {
+            try (PushbackInputStream f = new PushbackInputStream(is)) {
                 int i = 0;
                 int add = 0;
                 char r = ' ';
