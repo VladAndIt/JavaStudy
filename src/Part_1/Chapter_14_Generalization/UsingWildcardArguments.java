@@ -41,7 +41,7 @@ class WildCardDemo<T extends Number>{
         return sum / nums.length;
     }
 
-    boolean sameAvg(WildCardDemo<?> ob){
+    boolean sameAvg(WildCardDemo<?> ob){//<?> is a wildcard argument
         if (average() == ob.average()) return true;
         return false;
     }

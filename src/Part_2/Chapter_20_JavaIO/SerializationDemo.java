@@ -4,7 +4,7 @@ import java.io.*;
 
 public class SerializationDemo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        try (ObjectOutputStream obS = new ObjectOutputStream(new FileOutputStream("serial.txt"))) {
+        try (ObjectOutputStream obS = new ObjectOutputStream(new FileOutputStream("Sfile1.txt"))) {
             MyClass obj1 = new MyClass("Hello", -7, 2.7e10);
             System.out.println("obj:" + obj1);
 
@@ -12,7 +12,7 @@ public class SerializationDemo {
         } catch (IOException e) {
             System.out.println("Ser" + e);
         }
-        try (ObjectInputStream obS = new ObjectInputStream(new FileInputStream("serial.txt"))) {
+        try (ObjectInputStream obS = new ObjectInputStream(new FileInputStream("Sfile1.txt"))) {
             MyClass obj2 = (MyClass)obS.readObject();
             System.out.println("obj2:" + obj2);
 
