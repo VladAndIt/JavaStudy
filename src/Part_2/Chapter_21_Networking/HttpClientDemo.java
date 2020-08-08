@@ -17,7 +17,7 @@ import java.util.Set;
 public class HttpClientDemo {
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
         HttpClient myHC = HttpClient.newHttpClient();
-        HttpRequest myReq = HttpRequest.newBuilder(new URI("https://www.google.com/")).build();
+        HttpRequest myReq = HttpRequest.newBuilder(new URI("https://www.youtube.com/watch?v=x5p1eGlr4Jw&feature=youtu.be")).build();
 
         HttpResponse<InputStream> myResp = myHC.send(myReq, HttpResponse.BodyHandlers.ofInputStream());
 
