@@ -19,7 +19,6 @@ public class URLDemo {
 
         URLConnection connection = hp2.openConnection();
 
-
         System.out.println("Fields: " + connection.getHeaderFields() +
                 "\nContent TimeOut: " + connection.getConnectTimeout() +
                 "\nContent Type: " + connection.getContentType() +
