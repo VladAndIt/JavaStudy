@@ -1,4 +1,4 @@
-package Part_2.Chapter_25_RegularExpression;
+package Part_2.Chapter_25_RegularExpression.PatternMatching;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
