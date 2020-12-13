@@ -1,5 +1,5 @@
-package CodWars;//import Part_1.Chapter_9_Interfaces.*;
-//import Part_1.Chapter_10_Exceptions.*;
+package CodWars;//import Complete_reference_java_11.Part_1.Chapter_9_Interfaces.*;
+//import Complete_reference_java_11.Part_1.Chapter_10_Exceptions.*;
 
 public class MainWars {
     public static void main(String[] args) {
